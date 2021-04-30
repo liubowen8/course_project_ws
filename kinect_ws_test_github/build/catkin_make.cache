@@ -1,2 +1,0 @@
-robot_mrobot/mrobot_bringup:robot_mrobot/mrobot_description:robot_mrobot/mrobot_gazebo:robot_mrobot/mrobot_navigation:robot_mrobot/mrobot_teleop
--DCATKIN_DEVEL_PREFIX=/home/l/kinect_ws/devel -DCMAKE_INSTALL_PREFIX=/home/l/kinect_ws/install -G Unix Makefiles
