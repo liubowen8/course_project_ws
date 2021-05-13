@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: mrobot_gazebo
+    relative_path: urdf/mrobot_with_rplidar_and_arm.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/mrobot.srdf
+  CONFIG:
+    author_name: LIU Bowen
+    author_email: 1137515540@qq.com
+    generated_timestamp: 1619091737

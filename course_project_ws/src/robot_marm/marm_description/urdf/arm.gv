@@ -1,0 +1,35 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"bottom_link" [label="bottom_link"];
+"link1" [label="link1"];
+"link2" [label="link2"];
+"link3" [label="link3"];
+"link4" [label="link4"];
+"link5" [label="link5"];
+"link6" [label="link6"];
+"gripper_finger_link1" [label="gripper_finger_link1"];
+"gripper_finger_link2" [label="gripper_finger_link2"];
+"grasping_frame" [label="grasping_frame"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "bottom_joint" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"bottom_joint" -> "bottom_link"
+"base_link" -> "joint1" [label="xyz: 0 0 0.02 \nrpy: 0 1.5708 -0"]
+"joint1" -> "link1"
+"link1" -> "joint2" [label="xyz: -0.1 0 0 \nrpy: -1.57079 5.55112e-17 1.57079"]
+"joint2" -> "link2"
+"link2" -> "joint3" [label="xyz: 0 0 0.14 \nrpy: 3.14159 2.65359e-06 3.14159"]
+"joint3" -> "link3"
+"link3" -> "joint4" [label="xyz: 0 0 -0.22 \nrpy: 0 1.5708 3.14159"]
+"joint4" -> "link4"
+"link4" -> "joint5" [label="xyz: 0.06 0 0 \nrpy: 0 1.5708 -0"]
+"joint5" -> "link5"
+"link5" -> "joint6" [label="xyz: 0 0 0.06 \nrpy: 0 -1.5708 4.71238"]
+"joint6" -> "link6"
+"link6" -> "finger_joint1" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"finger_joint1" -> "gripper_finger_link1"
+"link6" -> "finger_joint2" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"finger_joint2" -> "gripper_finger_link2"
+"link6" -> "grasping_frame_joint" [label="xyz: 0.08 0 0 \nrpy: 0 -0 0"]
+"grasping_frame_joint" -> "grasping_frame"
+}
