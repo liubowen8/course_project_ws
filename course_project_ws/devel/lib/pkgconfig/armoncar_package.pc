@@ -1,8 +1,0 @@
-prefix=/home/l/course_project_ws/devel
-
-Name: armoncar_package
-Description: Description of armoncar_package
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -1,2 +1,0 @@
-armoncar_package:household_objects_database_msgs:manipulation_msgs:mrobot_bringup:mrobot_gazebo:mrobot_navigation:mrobot_teleop:robot_marm/armoncar_moveit_config:robot_marm/marm_description:robot_marm/marm_gazebo:robot_marm/marm_moveit_config:robot_marm/marm_planning
--DCATKIN_DEVEL_PREFIX=/home/l/course_project_ws/devel -DCMAKE_INSTALL_PREFIX=/home/l/course_project_ws/install -G Unix Makefiles
