@@ -1,0 +1,86 @@
+digraph G {
+node [shape=box];
+"base_footprint" [label="base_footprint"];
+"base_link" [label="base_link"];
+"left_motor" [label="left_motor"];
+"left_wheel_link" [label="left_wheel_link"];
+"right_motor" [label="right_motor"];
+"right_wheel_link" [label="right_wheel_link"];
+"front_caster_link" [label="front_caster_link"];
+"plate_1_link" [label="plate_1_link"];
+"plate_2_link" [label="plate_2_link"];
+"base_link_of_arm" [label="base_link_of_arm"];
+"link1" [label="link1"];
+"link2" [label="link2"];
+"link3" [label="link3"];
+"link4" [label="link4"];
+"link5" [label="link5"];
+"link6" [label="link6"];
+"gripper_finger_link1" [label="gripper_finger_link1"];
+"gripper_finger_link2" [label="gripper_finger_link2"];
+"grasping_frame" [label="grasping_frame"];
+"laser_link" [label="laser_link"];
+"standoff_2in_1_link" [label="standoff_2in_1_link"];
+"standoff_2in_5_link" [label="standoff_2in_5_link"];
+"standoff_2in_2_link" [label="standoff_2in_2_link"];
+"standoff_2in_6_link" [label="standoff_2in_6_link"];
+"standoff_2in_3_link" [label="standoff_2in_3_link"];
+"standoff_2in_7_link" [label="standoff_2in_7_link"];
+"standoff_2in_4_link" [label="standoff_2in_4_link"];
+"standoff_2in_8_link" [label="standoff_2in_8_link"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_footprint" -> "base_footprint_joint" [label="xyz: 0 0 0.033 \nrpy: 0 -0 0"]
+"base_footprint_joint" -> "base_link"
+"base_link" -> "base_left_motor_joint" [label="xyz: -0.055 0.075 0 \nrpy: 0 -0 0"]
+"base_left_motor_joint" -> "left_motor"
+"left_motor" -> "left_wheel_joint" [label="xyz: 0 0.0485 0 \nrpy: 0 -0 0"]
+"left_wheel_joint" -> "left_wheel_link"
+"base_link" -> "base_right_motor_joint" [label="xyz: -0.055 -0.075 0 \nrpy: 0 -0 0"]
+"base_right_motor_joint" -> "right_motor"
+"right_motor" -> "right_wheel_joint" [label="xyz: 0 -0.0485 0 \nrpy: 0 -0 0"]
+"right_wheel_joint" -> "right_wheel_link"
+"base_link" -> "front_caster_joint" [label="xyz: 0.1135 0 -0.0165 \nrpy: 0 -0 0"]
+"front_caster_joint" -> "front_caster_link"
+"base_link" -> "plate_1_joint" [label="xyz: 0 0 0.07 \nrpy: 0 -0 0"]
+"plate_1_joint" -> "plate_1_link"
+"plate_1_link" -> "plate_2_joint" [label="xyz: 0 0 0.07 \nrpy: 0 -0 0"]
+"plate_2_joint" -> "plate_2_link"
+"plate_2_link" -> "arm_joint" [label="xyz: 0 0 0.02 \nrpy: 0 -0 0"]
+"arm_joint" -> "base_link_of_arm"
+"base_link_of_arm" -> "joint1" [label="xyz: 0 0 0.02 \nrpy: 0 1.5708 -0"]
+"joint1" -> "link1"
+"link1" -> "joint2" [label="xyz: -0.1 0 0 \nrpy: -1.57079 5.55112e-17 1.57079"]
+"joint2" -> "link2"
+"link2" -> "joint3" [label="xyz: 0 0 0.14 \nrpy: 3.14159 2.65359e-06 3.14159"]
+"joint3" -> "link3"
+"link3" -> "joint4" [label="xyz: 0 0 -0.22 \nrpy: 0 1.5708 3.14159"]
+"joint4" -> "link4"
+"link4" -> "joint5" [label="xyz: 0.06 0 0 \nrpy: 0 1.5708 -0"]
+"joint5" -> "link5"
+"link5" -> "joint6" [label="xyz: 0 0 0.06 \nrpy: 0 -1.5708 4.71238"]
+"joint6" -> "link6"
+"link6" -> "finger_joint1" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"finger_joint1" -> "gripper_finger_link1"
+"link6" -> "finger_joint2" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"finger_joint2" -> "gripper_finger_link2"
+"link6" -> "grasping_frame_joint" [label="xyz: 0.08 0 0 \nrpy: 0 -0 0"]
+"grasping_frame_joint" -> "grasping_frame"
+"plate_1_link" -> "rplidar_joint" [label="xyz: 0 0 0.028 \nrpy: 0 -0 0"]
+"rplidar_joint" -> "laser_link"
+"base_link" -> "standoff_2in_1_joint" [label="xyz: -0.09 -0.07 0.035 \nrpy: 0 -0 0"]
+"standoff_2in_1_joint" -> "standoff_2in_1_link"
+"standoff_2in_1_link" -> "standoff_2in_5_joint" [label="xyz: 0 0 0.07 \nrpy: 0 -0 0"]
+"standoff_2in_5_joint" -> "standoff_2in_5_link"
+"base_link" -> "standoff_2in_2_joint" [label="xyz: -0.09 0.07 0.035 \nrpy: 0 -0 0"]
+"standoff_2in_2_joint" -> "standoff_2in_2_link"
+"standoff_2in_2_link" -> "standoff_2in_6_joint" [label="xyz: 0 0 0.07 \nrpy: 0 -0 0"]
+"standoff_2in_6_joint" -> "standoff_2in_6_link"
+"base_link" -> "standoff_2in_3_joint" [label="xyz: 0.06 -0.1 0.035 \nrpy: 0 -0 0"]
+"standoff_2in_3_joint" -> "standoff_2in_3_link"
+"standoff_2in_3_link" -> "standoff_2in_7_joint" [label="xyz: 0 0 0.07 \nrpy: 0 -0 0"]
+"standoff_2in_7_joint" -> "standoff_2in_7_link"
+"base_link" -> "standoff_2in_4_joint" [label="xyz: 0.06 0.1 0.035 \nrpy: 0 -0 0"]
+"standoff_2in_4_joint" -> "standoff_2in_4_link"
+"standoff_2in_4_link" -> "standoff_2in_8_joint" [label="xyz: 0 0 0.07 \nrpy: 0 -0 0"]
+"standoff_2in_8_joint" -> "standoff_2in_8_link"
+}
