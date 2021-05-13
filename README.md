@@ -1,3 +1,5 @@
 # rosproject
-asdffffsadf
-刘阿斯蒂芬
+cd ~
+git clone https://github.com/greenhand-fighting/course_project_ws.git
+cd course_project_ws
+catkin_make
