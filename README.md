@@ -8,10 +8,14 @@ cd course_project_ws
 catkin_make
 
 
-这个是main的修改这个是main的修改这个是main的修改这个是main的修改这个是main的修改这个是main的修改这个是main的修改
-这个是test的修改这个是test的修改这个是test的修改这个是test的修改这个是test的修改这个是test的修改这个是test的修改这个是test的修改这个是test的修改这个是test的修改
-这个是test的修改
+test的修改位点1
 
 
 
-这个是test的修改这个是test的修改这个是test的修改
+test的修改位点2
+
+
+
+
+
+test的修改位点3
