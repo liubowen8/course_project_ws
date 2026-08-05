@@ -8,4 +8,4 @@ cd course_project_ws
 catkin_make
 
 
-xxx
+这个是main的修改
